@@ -26,8 +26,14 @@
             </article>
       </section>
 
-      <nav>
-
+      <nav class="pagination">
+            <button id="prev-btn" onclick="changePage(-1)">
+                  Anterior
+            </button>
+            <span id="page-number">Página 1</span>
+            <button id="next-btn" onclick="changePage(1)">
+                  Siguiente
+            </button>
       </nav>
 
       <section>
@@ -36,7 +42,9 @@
 
       <footer class="footer">
             <div class="container-footer">
-                  <small><a href="https://rickandmortyapi.com/">&copy; Rick and Morty is created by Justin Roiland and Dan Harmon for Adult Swim</a></small>
+                  <small>
+                        <a href="https://rickandmortyapi.com/" target="_blank">&copy; Rick and Morty is created by Justin Roiland and Dan Harmon for Adult Swim</a>
+                  </small>
             </div>
       </footer>
 
