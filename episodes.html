@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>API - Rick and Morty | Episodes</title>
+      <link rel="icon" type="image-icon" href="/img/icons/icon-rick.png">
+      <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+      <header class="header">
+            <div class="container-logo">
+                  <img id="img-header" src="/img/rick-morthy.png" alt="imagen Rick y Morty" />
+            </div>
+            <div class="header-titles">
+                  <h1 id="title">API - Rick and Morty</h1>
+                  <h2 id="subtitle">All Episodes</h2>
+            </div>
+            <nav class="header-nav" aria-label="Navegación principal">
+                  <ul class="nav-list">
+                        <li class="nav-item">
+                              <a href="./index.html" class="nav-link" id="nav-characters">
+                                    <span class="material-symbols--person-search-outline-rounded nav icon"></span>
+                                    Characters
+                              </a>
+                        </li>
+                        <li class="nav-item">
+                              <a href="./episodes.html" class="nav-link" id="nav-episodes">
+                                    <span class="material-symbols--live-tv-outline-rounded nav-icon"></span>
+                                    Episodes
+                              </a>
+                        </li>
+                  </ul>
+            </nav>
+      </header>
+
+      <!-- BÚSQUEDA -->
+      <section class="search-container">
+            <div class="search-box">
+                  <input
+                        type="text"
+                        id="episode-search"
+                        class="search-input"
+                        placeholder="Ej: Pilot, Rickmancing the Stone..."
+                        aria-label="Buscar episodio"
+                  />
+                  <button id="search-btn" class="search-btn">Buscar</button>
+            </div>
+      </section>
+
+      <!-- BOTÓN VOLVER -->
+      <div class="back-container" id="back-container" style="display:none;">
+            <button class="back-btn" id="back-btn">← Volver a episodios</button>
+      </div>
+
+      <!-- LISTA DE EPISODIOS -->
+      <section class="episodes-container" id="episodes-list"></section>
+
+      <!-- OVERLAY PERSONAJE -->
+      <div class="character-overlay" id="character-overlay" style="display:none;">
+            <div class="overlay-inner">
+                  <button class="close-overlay-btn" id="close-overlay-btn">✕</button>
+                  <div id="overlay-character-content"></div>
+            </div>
+      </div>
+
+      <footer class="footer">
+            <div class="container-footer">
+                  <small>
+                        <a href="https://rickandmortyapi.com/" target="_blank">
+                              &copy; Rick and Morty is created by Justin Roiland and Dan Harmon for Adult Swim
+                        </a>
+                  </small>
+            </div>
+      </footer>
+
+      <script src="./js/index.js"></script>
+</body>
+</html>

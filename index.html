@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,38 @@
       <link rel="icon" type="image-icon" href="/img/icons/icon-rick.png">
       <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
       <header class="header">
             <div class="container-logo">
-                  <img id="img-header" src="/img/rick-morthy.png" alt="imgane Rick y Morty"/>
+                  <img id="img-header" src="/img/rick-morthy.png" alt="imgane Rick y Morty" />
             </div>
-            <h1 id="title">API - Rick and Morty</h1>
+            <div class="header-titles">
+                  <h1 id="title">API - Rick and Morty</h1>
+                  <h2 id="subtitle">All Characters</h2>
+            </div>
+
+            <nav class="header-nav" aria-label="Navegación principal">
+                  <ul class="nav-list">
+                        <li class="nav-item">
+                              <a href="./index.html" class="nav-link" id="nav-characters">
+                                    <span class="material-symbols--person-search-outline-rounded nav icon"></span>
+                                    Characters
+                              </a>
+                        </li>
+                        <li class="nav-item">
+                              <a href="./episodes.html" class="nav-link" id="nav-episodes">
+                                    <span class="material-symbols--live-tv-outline-rounded nav-icon"></span>
+                                    Episodes
+                              </a>
+                        </li>
+                  </ul>
+            </nav>
+
       </header>
 
       <section class="characters-container">
+
             <article class="character-card">
                   <div class="card-image">
 
@@ -26,7 +50,7 @@
             </article>
       </section>
 
-      <nav class="pagination">
+      <nav class="pagination" aria-labelledby="nav-pagination">
             <button id="prev-btn" onclick="changePage(-1)">
                   Anterior
             </button>
@@ -43,11 +67,13 @@
       <footer class="footer">
             <div class="container-footer">
                   <small>
-                        <a href="https://rickandmortyapi.com/" target="_blank">&copy; Rick and Morty is created by Justin Roiland and Dan Harmon for Adult Swim</a>
+                        <a href="https://rickandmortyapi.com/" target="_blank">&copy; Rick and Morty is created by
+                              Justin Roiland and Dan Harmon for Adult Swim</a>
                   </small>
             </div>
       </footer>
 
 </body>
 <script src="./js/index.js"></script>
+
 </html>
