@@ -59,10 +59,6 @@ body {
       margin: 0;
       white-space: nowrap;
       overflow: hidden;
-      border-right: 2px solid rgb(67, 161, 127);
-      animation:
-            typewriter 3s steps(14) forwards,
-            blink 0.7s step-end infinite;
 }
 
 /* ── NAV ─────────────────────────────────── */
@@ -256,7 +252,7 @@ body {
       background-color: rgb(50, 130, 100);
 }
 
-/* ── BACK BUTTON ─────────────────────────── */
+/* ── BACK BUTTON  */
 .back-container {
       padding: 0 10px 8px;
 }
@@ -276,7 +272,7 @@ body {
       background-color: rgba(67, 161, 127, 0.1);
 }
 
-/* ── EPISODES LIST ───────────────────────── */
+/* EPISODES LIST  */
 .episodes-container {
       flex: 1;
       display: flex;
@@ -334,7 +330,7 @@ body {
       color: rgba(224, 224, 224, 0.6);
 }
 
-/* ── CHARACTER CHIPS ─────────────────────── */
+/*  CHARACTER CHIPS  */
 .episode-characters-list {
       display: flex;
       flex-wrap: wrap;
@@ -360,7 +356,7 @@ body {
       border-color: rgb(67, 161, 127);
 }
 
-/* ── CHARACTER OVERLAY ───────────────────── */
+/*  CHARACTER OVERLAY */
 .character-overlay {
       position: fixed;
       inset: 0;
@@ -399,7 +395,7 @@ body {
       font-size: 0.9rem;
 }
 
-/* ── FOOTER ──────────────────────────────── */
+/*  FOOTER  */
 .footer {
       text-align: center;
       background-color: rgba(0, 0, 0, 0.6);
@@ -422,7 +418,7 @@ body {
       cursor: pointer;
 }
 
-/* ── RESPONSIVE ──────────────────────────── */
+/* RESPONSIVE  */
 @media (min-width: 600px) {
       .characters-container {
             grid-template-columns: repeat(4, 1fr);
