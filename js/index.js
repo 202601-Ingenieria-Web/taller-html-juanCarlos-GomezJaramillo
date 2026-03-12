@@ -1,5 +1,5 @@
 let currentPage = 1;
-const itemsPerPage = 10;
+const itemsPerPage = 5;
 
 function fetchCharacters(page) {
       const container = document.querySelector('.characters-container');
@@ -135,9 +135,13 @@ async function loadChipNames(episodes) {
             episodes.flatMap(ep => ep.characters.map(url => url.split('/').pop()))
       )];
 
+
+
+      console.log(`Total IDs únicos a cargar: ${allIds.length}`);
+
       // fetch en bloques de 20 para no saturar la API
-      for (let i = 0; i < allIds.length; i += 20) {
-            const batch = allIds.slice(i, i + 20);
+      for (let i = 0; i < allIds.length; i += 100) {
+            const batch = allIds.slice(i, i + 100);
             try {
                   const res = await fetch(`https://rickandmortyapi.com/api/character/${batch.join(',')}`);
                   const data = await res.json();

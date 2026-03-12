@@ -12,7 +12,7 @@ body {
       flex-direction: column;
 }
 
-/* ── HEADER ─────────────────────────────── */
+/* HEADER */
 
 .header {
       display: flex;
@@ -61,7 +61,7 @@ body {
       overflow: hidden;
 }
 
-/* ── NAV ─────────────────────────────────── */
+/* NAV */
 .header-nav {
       padding-right: 1rem;
       display: flex;
@@ -126,14 +126,14 @@ body {
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='m11.05 14.5l4.15-2.65q.45-.3.45-.85t-.45-.85L11.05 7.5q-.5-.325-1.025-.05t-.525.875v5.35q0 .6.525.875t1.025-.05M4 19q-.825 0-1.412-.587T2 17V5q0-.825.588-1.412T4 3h16q.825 0 1.413.588T22 5v12q0 .825-.587 1.413T20 19h-4v1q0 .425-.288.713T15 21H9q-.425 0-.712-.288T8 20v-1zm0-2h16V5H4zm0 0V5z'/%3E%3C/svg%3E");
 }
 
-/* ── CHARACTERS ──────────────────────────── */
+/* CHARACTERS */
 .characters-container {
       flex: 1;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-      padding: 10px;
-      margin: 0 10px;
+      gap: 1rem;
+      padding: 15px;
+      margin: 0 10px; /* ← era margin: 1px */
       background-color: rgba(0, 0, 0, 0.4);
       border-radius: 20px;
       align-items: start;
@@ -148,6 +148,8 @@ body {
       flex-direction: column;
       height: auto;
       transition: transform 0.3s ease;
+      margin: 0.25rem;
+      box-shadow: 0 0 10px rgba(4, 255, 121, 0.5);
 }
 
 .card-image img {
@@ -161,21 +163,33 @@ body {
       color: #e0e0e0;
 }
 
+.card-content p {
+      font-size: 40px;
+      margin: 4px 0;
+      word-break: break-word;
+}
+
 .character-name {
-      font-size: 0.9rem;
+      font-size: 10px;
       margin-bottom: 8px;
       color: #fff;
       font-weight: bold;
 }
 
 .card-content p {
-      font-size: 0.75rem;
+      font-size: 18px;
+      font-family: "Nunito", sans-serif;
       margin: 4px 0;
       line-height: 1.2;
       word-break: break-word;
 }
 
-/* ── PAGINATION ──────────────────────────── */
+.character-name {
+      font-family: "Nunito", sans-serif;
+      font-size: 20px;
+}
+
+/* PAGINATION */
 .pagination {
       display: flex;
       justify-content: center;
@@ -200,7 +214,7 @@ body {
       font-weight: bold;
 }
 
-/* ── EPISODES SEARCH ─────────────────────── */
+/*  EPISODES SEARCH  */
 .search-container {
       display: flex;
       flex-direction: column;
@@ -252,7 +266,7 @@ body {
       background-color: rgb(50, 130, 100);
 }
 
-/* ── BACK BUTTON  */
+/* BACK BUTTON  */
 .back-container {
       padding: 0 10px 8px;
 }
@@ -417,38 +431,53 @@ body {
       font-weight: bold;
       cursor: pointer;
 }
-
-/* RESPONSIVE  */
-@media (min-width: 600px) {
-      .characters-container {
-            grid-template-columns: repeat(4, 1fr);
-      }
-      #title {
-            font-size: 1.8rem;
-      }
-      .character-name {
-            font-size: 1.1rem;
-      }
-      .card-content p {
-            font-size: 0.85rem;
-      }
-}
-
+/* RESPONSIVE */
 @media (min-width: 1024px) {
-      .characters-container {
-            grid-template-columns: repeat(5, 1fr);
-            max-width: 1400px;
-            margin: 0 auto;
-            overflow-y: auto;
-            margin-bottom: 10px;
-      }
-
-      .card-content p {
-            font-size: 0.8rem;
-      }
-
       body {
             height: 100vh;
             overflow: hidden;
+      }
+
+      .characters-container {
+            grid-template-columns: repeat(5, 1fr);
+            width: calc(100% - 20px);
+            margin: 0 auto;
+            gap: 0.4rem;
+            flex: 1;
+            min-height: 0;
+            overflow-y: auto;
+            margin-bottom: 10px;
+            align-items: start;
+      }
+
+      .character-card {
+            margin: 2rem;
+            height: auto;
+      }
+
+      .card-image {
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+      }
+
+      .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+      }
+
+      .card-content {
+            padding: 6px 8px;
+      }
+
+      .card-content p {
+            font-size: 18px;
+            margin: 2px 0;
+      }
+
+      .character-name {
+            font-size: 22px;
+            margin-bottom: 3px;
       }
 }

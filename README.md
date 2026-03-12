@@ -18,4 +18,4 @@ El repositorio contiene una aplicación web sencilla que conecta la [API](https:
 
       El usuario puede interactuar también buscando en el input superior digitando el nombre del episodio o una palabra clave de este.
       
-      ![alt text](image.png)
+      ![alt text](/img/image.png)
