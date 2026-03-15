@@ -29,6 +29,4 @@ la ejecución en tu servidor local:
 
       ![alt text](./img/image-2.png)
 
-Tambien puedes verla desplegada en github pages en el siguiente enlace:
-
-      <https://202601-ingenieria-web.github.io/taller-html-juanCarlos-GomezJaramillo/>
+Tambien puedes verla desplegada en github pages en el siguiente enlace: **<https://202601-ingenieria-web.github.io/taller-html-juanCarlos-GomezJaramillo/>**
