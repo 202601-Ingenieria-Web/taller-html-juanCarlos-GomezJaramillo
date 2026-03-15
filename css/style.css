@@ -432,7 +432,7 @@ body {
       cursor: pointer;
 }
 /* RESPONSIVE */
-@media (min-width: 1024px) {
+@media (min-width: 1230px) {
       body {
             height: 100vh;
             overflow: hidden;
@@ -447,37 +447,43 @@ body {
             min-height: 0;
             overflow-y: auto;
             margin-bottom: 10px;
-            align-items: start;
+            align-items: center;
       }
 
       .character-card {
-            margin: 2rem;
+            margin: 0.5rem;
             height: auto;
+            display: flex;
+            flex-direction: column;
       }
 
       .card-image {
-            aspect-ratio: 1 / 1;
+            width: 70%;
+            height: 140px;      /* ← altura fija y pequeña */
             overflow: hidden;
+            flex-shrink: 0;
       }
 
       .card-image img {
-            width: 100%;
+            width: 50%;
             height: 100%;
             object-fit: cover;
+            object-position: top;  /* ← muestra la cara, no el cuerpo */
             display: block;
       }
 
       .card-content {
-            padding: 6px 8px;
+            padding: 2px 8px;
+            flex: 0;             /* ← siempre visible debajo de la imagen */
       }
 
       .card-content p {
-            font-size: 18px;
+            font-size: 11px;
             margin: 2px 0;
       }
 
       .character-name {
-            font-size: 22px;
+            font-size: 13px;
             margin-bottom: 3px;
       }
 }

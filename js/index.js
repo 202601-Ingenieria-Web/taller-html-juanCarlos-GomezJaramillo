@@ -1,5 +1,5 @@
 let currentPage = 1;
-const itemsPerPage = 5;
+const itemsPerPage = 10;
 
 function fetchCharacters(page) {
       const container = document.querySelector('.characters-container');

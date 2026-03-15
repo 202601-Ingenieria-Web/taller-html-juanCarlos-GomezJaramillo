@@ -18,4 +18,17 @@ El repositorio contiene una aplicación web sencilla que conecta la [API](https:
 
       El usuario puede interactuar también buscando en el input superior digitando el nombre del episodio o una palabra clave de este.
       
-      ![alt text](/img/image.png)
+      ![alt text](./img/image-1.png)
+
+3. Consta además, de un pequeño banner en la pagina principal que muestra de manera aleatoria uno de los personajes de la serie, en este se ve el nombre del personaje, su status y el episodio donde aparece.
+
+      ![alt text](./img/image.png)
+
+4. Para el despliegeu de la aplicacion se puede clonar el repositorio, y con la extensión de **Live Server** les das click derecho sobre el archivos **index.html** y de esta manera verás 
+la ejecución en tu servidor local:
+
+      ![alt text](./img/image-2.png)
+
+Tambien puedes verla desplegada en github pages en el siguiente enlace:
+
+      <https://202601-ingenieria-web.github.io/taller-html-juanCarlos-GomezJaramillo/>
