@@ -227,9 +227,24 @@ body {
       padding: 15px;
 }
 
-/* RESPONSIVE DESIGN  */
+.footer a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s ease; /* Transición suave */
+    font-family: "Roboto", sans-serif; /* Tu fuente normal */
+}
 
-/* Tablets (2 columnas) */
+/* El efecto que pediste: cambio de fuente a monospace al pasar el mouse */
+.footer a:hover, 
+.footer a:active {
+    font-family: monospace !important; /* Cambia a fuente de consola */
+    color: rgb(67, 161, 127); /* Color verde de tu app */
+    font-weight: bold;
+    /* Si quieres mantener el degradado que tenías antes, puedes dejarlo, 
+       pero el cambio de fuente es lo que resalta aquí */
+}
+
+/* RESPONSIVE DESIGN  */
 @media (min-width: 600px) {
       .characters-container {
             grid-template-columns: repeat(2, 1fr);
